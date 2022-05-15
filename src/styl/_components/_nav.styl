@@ -1,9 +1,39 @@
 .nav
-	&__item
-		display inline-block
-		margin-right 15px
-		&:last-child
-			margin-right 0
-	&__link
-		display block
-		color $text-color
+	&-wrapper
+		flex 1
+		margin-left 20px
+		margin-right 20px
+	
+	ul
+		display flex
+		justify-content space-evenly
+		align-items center
+		li
+			display inline-block
+			margin-right 20px
+			&:last-child
+				margin-right 0
+				
+			&.current-menu-item
+				a
+					&:before
+						width 100%
+				
+		a
+			font-size 24px
+			display inline-block
+			position relative
+			color $text-color
+			&:before
+				pseudo()
+				position absolute
+				left 0
+				width 0
+				vertical-center()
+				height 4px
+				background-color $accent-color
+				transition width .17s ease-in-out
+			&:hover
+				&:before
+					width 100%
+			
