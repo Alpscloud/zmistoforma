@@ -80,24 +80,22 @@
 		flex none
 		width 50px
 		height 50px
-		border-radius 50%
-		background-color $accent-color
 		position relative
 		transition background-color .17s ease-in-out
-		margin-left 15px
-		&__line
-			width 27px
-			height 2px
+		z-index 17
+		margin-right -10px
+		
+		span
+			width 30px
+			height 3px
 			background-color $basic-black-color
 			display block
 			margin 6px auto
 			transition all 0.3s ease-in-out	
 		&.is-active
-			.btn__hamburger--line
+			span
 				&:nth-child(1)
-					transform translateY(8px) rotate(45deg)
+					transform translateY(3px) rotate(45deg)
 				&:nth-child(2)
-					opacity 0	
-				&:nth-child(3)
-					transform translateY(-8px) rotate(-45deg)
+					transform translateY(-6px) rotate(-45deg)
 		

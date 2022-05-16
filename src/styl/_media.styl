@@ -11,5 +11,866 @@
 
 +max-screen(1600px)
 	.container
+		padding-left 60px
+		padding-right 60px
+
+	.main
+		padding-top 79px
+		
+	.sect-title
+		font-size 32px
+		margin-bottom 70px
+	
+	// Header
+	.nav
+		ul
+			a
+				font-size 20px
+				
+
+	.title
+		font-size 78px
+		i
+			font-size 110px
+			
+	.text-meaning
+		&:before
+			right -300px
+		&__title
+			font-size 24px
+			max-width 600px
+		&__entering
+			margin-bottom 124px
+			
+	.sect__promo
+		padding-bottom 110px
+		
+	.promo-img
+		width 570px
+		
+	.thesis
+		font-size 32px
+		max-width 930px
+		p
+			max-width 870px
+			
+		&-img
+			width 370px
+			top 75px
+		
+
+	.sect__prices
+		padding-bottom 110px
+		
+	.prices
+		&:before
+			width 315px
+			height 315px
+	.price
+		&-block
+			&__description
+				font-size 20px
+				margin-bottom 30px
+				line-height 1
+				max-width 340px
+			&__title
+				font-size 24px
+				margin-bottom 30px
+				
+	.advantage
+		font-size 20px
+		&-title
+			font-size 24px
+			
+
+	.about
+		padding-left 0
+		margin-top -70px
+		&-author
+			width 290px
+			font-size 28px
+			margin-right 6%
+			&:before
+				width 135px
+				height 200px
+				right 30px
+				top -95px
+				
+		&-img
+			width 320px
+			
+		&-text
+			font-size 16px
+			margin-top 120px
+			
+	.sect__partners
+		padding-bottom 160px
+		
+	.consultation
+		&-entering 
+			justify-content flex-start
+			.arrow
+				max-width 190px
+				height 15px
+				
+			.block-text
+				max-width 625px
+				margin-right 90px
+		&-content
+			margin-top 5px
+			
+		&-img
+			width 400px
+			
+
+	.sect__consultation
+		padding-bottom 90px
+		
+
+			
+
+	.block-text
+		font-size 24px
+		line-height 29px
+		
+	.sect__condition
+		padding-bottom 140px
+		.sect-title
+			margin-bottom 40px
+			
+	.condition
+		align-items center
+		
+		.block-text
+			max-width 620px
+			
+		&-img
+			max-width 510px
+		
+
+	.brief
+		&-img
+			width 380px
+			height 380px
+		&-text
+			min-height 380px
+		&-link
+			font-size 36px
+			
+	.sect__brief
+		padding-bottom 90px
+		
+	.dialog
+		&-link
+			font-size 24px
+		&-row
+			max-width 980px
+		&-img
+			width 330px
+			left 300px
+			
+	.phone-row
+		padding-left 100px
+		
+	.copyright__row
+		margin-top 130px
+			
+			
+
+				
+
++max-screen(1280px)
+	.container
 		padding-left 20px
 		padding-right 20px
+		
+
+	.about
+		&-author
+			margin-right 30px
+			font-size 25px
+		&-img
+			width 290px
+			
+		&-text
+			font-size 14px
+			
+		
+
++max-screen(1100px)
+	.main
+		padding-top 69px
+		
+	.header
+		padding 10px 0
+		&-divider
+			display none
+			
+
+	.nav
+		&-logo
+			display block
+			width fit-content
+		&-wrapper
+			
+			position fixed
+			height 100vh
+			overflow-y auto
+			z-index 15
+			background-color $basic-white-color
+			top 0
+			left 0
+			flex none
+			margin 0
+			width 100%
+			padding 100px 20px
+			
+			transition all .35s ease-in-out
+			opacity 0
+			visibility hidden
+			pointer-events none
+			&.is-opened
+				opacity 1
+				visibility visible
+				pointer-events auto
+			
+			.promo-round
+				display block
+				margin 100px auto 0
+				
+		ul
+			display block
+			a
+				font 24px $Bold
+			li
+				display block
+				margin-right 0
+				margin-bottom 40px
+				text-align center
+				&:last-child
+					margin-bottom 0
+					
+
+	// Promo
+	.sect__promo
+		padding-bottom 200px
+	
+	.promo-block
+		padding 100px 0
+		
+		.promo-round
+			width 160px
+			height 160px
+			
+	.promo
+		&-img
+			
+			left 90px
+			top 40px
+			
+	.text-meaning
+		&:before
+			top -400px
+		&__blocks
+			margin-left -25px
+			margin-right -25px
+		&__block
+			width 33.3333%
+			padding-left 25px
+			padding-right 25px
+			font-size 20px
+			br
+				display none
+				
+		&__entering
+			margin-bottom 80px
+			svg
+				width 170px
+		&__title
+			margin-right 20px
+			font-size 22px
+			max-width 600px
+			
+
+	.thesis
+		max-width 100%
+		font-size 26px
+		&-img
+			position relative
+			top auto
+			right auto
+			width 75%
+			margin-left -20px
+			margin-top -110px
+			
+
+	.price-block
+		width 50%
+		> div
+			z-index 2
+			position relative
+		&:nth-child(3n+3)
+			width 100%
+			
+		&:nth-child(3)
+			margin-top 25px
+			> div
+				position relative
+		
+				&:before
+					pseudo()
+					position absolute
+					top -75px
+					left -40px
+					width 150px
+					height 150px
+					z-index -1
+					background url('../img/decor/blue-star.svg') 50% no-repeat / contain
+					pointer-events none
+				
+			
+	.prices
+		&:before
+			display none
+			
+
+	// About
+	.about
+		flex-wrap wrap
+		&-text
+			margin-top 0
+			flex none
+			width 100%
+			margin-top 30px
+			
+	.consultation-content
+		padding-left 40px
+		
+	.block-text
+		font-size 20px
+		
+	.consultation-entering 
+		.block-text
+			margin-right 40px
+			br
+				display none
+			
+
+
+	.phone-row
+		padding-left 0
+		
+	.dialog-img
+		left 25%
+
+
+
++max-screen(700px)
+	.container
+		padding-left 15px
+		padding-right 15px
+		
+	// Promo
+	.sect__promo
+		padding-bottom 100px
+	.promo
+		&-img
+			display none
+			
+		&-block
+			padding-bottom 55px
+			.promo-round
+				position relative
+				left auto
+				bottom auto
+			
+	.title
+		font-size 55px
+		i, span
+			font-size 66px
+			
+
+	.text-meaning
+		padding-top 0
+		&:before
+			background-image url('../img/ua-mobile.svg')
+			width 490px
+			height 463px
+			right 0
+			bottom 100%
+			top auto
+			margin-bottom -30px
+		&__blocks
+			margin-left -10px
+			margin-right -10px
+		&__block
+			font-size 14px
+			line-height 25px
+			padding-left 10px
+			padding-right 10px
+			i
+				text-transform none
+				display block
+				font-family $Italic
+				font-size 16px
+				
+		&__entering 
+			margin-bottom 45px
+			svg
+				height 5px
+				width auto
+				
+		&__title
+			font-size 18px
+			
+
+	.thesis
+		font-size 20px
+		
+	.sect__thesis
+		padding-bottom 170px
+		
+	.advantage
+		width 50%
+		flex none
+		margin-bottom 50px
+		&:nth-child(3n+3)
+			width 100%
+			div
+				width fit-content
+				margin 0 auto
+		&:nth-child(5),
+		&:nth-child(6)
+		div
+			width 100%
+			margin 0
+		&:nth-child(5)
+			width 50%
+			
+
+	.advantages
+		margin-bottom -50px
+		&-img
+			transform none
+			left auto
+			right -20px
+			
+	.sect__advantages
+		padding-bottom 190px
+		
+	// About
+	.about
+		margin-top -40px
+		&-author
+			margin-right 0
+			&:before
+				width 90px
+				height 140px
+				top -45px
+				right 0
+		&-img
+			width 100%
+			flex none
+			margin-right 0
+			margin-top -10px
+			img
+				width 280px
+				margin 0 auto
+	
+
+				
+	.partners 
+		margin-left -15px
+		margin-right -15px
+		.slick-track 
+			.slick-slide
+				width 250px
+				
+	.sect__consultation
+		.sect-title
+			margin-bottom 0
+			position relative
+			z-index 2
+				
+	.consultation
+		display flex
+		flex-direction column-reverse
+		&-content
+			padding-left 0
+			padding-bottom 25px
+			display block
+			position relative
+			padding-top 70px
+			margin-top -32px
+			.block-text
+				margin-left 0
+				width 370px
+				flex none
+		&-img
+			width 260px
+			position absolute
+			top 0
+			right -15px
+			
+		&-entering
+			flex-direction row-reverse
+			justify-content space-between
+			.block-text
+				margin-right 0
+				width 50%
+				flex none
+				
+			.arrow
+				height 24px
+				 
+			
+	.arrow
+		max-width none
+		flex none
+		width 93px
+		height 24px
+		background-image url('../img/decor/arrow-mobile.svg')
+		
+	// condition
+	.sect__condition
+		.sect-title
+			margin-bottom 0
+	.condition
+		position relative
+		padding-top 110px
+		margin-top -32px
+		.block-text
+			max-width calc(100% - 200px)
+			margin-right 0
+			
+		&-img
+			position absolute
+			top 0
+			right -15px
+			width 210px
+			height 165px
+			img
+				width 100%
+				height 100%
+				object-fit cover
+				
+	.brief
+		&-text
+			width 100%
+			min-height 230px
+			flex-direction column
+			&__content
+				display flex
+				width 100%
+				flex 1
+				flex-direction column
+				justify-content space-between
+		
+		&-link
+			font-size 24px
+			a
+				display block
+				width fit-content
+				&:before
+					bottom 0
+					height 5px
+				
+		&-img
+			width 300px
+			right -15px
+			height 300px
+			
+
+	.dialog
+		&-row
+			flex-wrap wrap
+			margin-bottom 30px
+		&-link
+			width 100%
+			margin-bottom 30px
+			&:last-child
+				margin-bottom 0
+				
+		&-img
+			left auto
+			right 50px
+			width 200px
+			height 280px
+			&:before
+				left auto
+				right -75px
+				bottom -75px
+				width 150px
+				height 150px
+				
+
+	.footer
+		padding-bottom 50px
+			
+			
+	.phone-link
+		width fit-content
+		margin-right 0
+		margin-left auto
+		
+			
+		
+
++max-screen(470px)
+	.sect-title
+		font-size 18px
+		margin-bottom 50px
+		
+	.logo
+		img
+			max-width 140px
+			
+
+	.title
+		font-size 30px
+		i, span
+			font-size 36px
+			
+
+	.sect__promo
+		padding-bottom 55px
+	.promo-block
+		padding-top 35px
+		
+		.promo-round
+			width 104px
+			height 104px
+			svg
+				width 15px
+				
+	.text-meaning
+		&:before
+			margin-bottom -115px
+			right -100px
+		&__title
+			font-size 14px
+			margin-right 10px
+		&__block
+			font-size 12px
+			line-height 18px
+		&__entering
+			svg
+				height 4px
+			
+
+	.sect__thesis
+		padding-bottom 70px
+	.thesis
+		font-size 16px
+		line-height 21px
+		&-img
+			width 295px
+			
+
+	// Prices
+	.sect__prices
+		padding-bottom 70px
+		
+	.prices
+		margin-bottom -50px
+		margin-left -10px
+		margin-right -10px
+	.price
+		&-block
+			margin-bottom 50px
+			padding-left 10px
+			padding-right 10px
+			&:nth-child(3)
+				div
+					max-width 230px
+			&__title
+				font-size 14px
+				margin-bottom 15px
+			&__description
+				font-size 13px
+				line-height 28px
+				margin-bottom 25px
+			&__value
+				font-size 14px
+				
+	// Advantges
+	.advantage
+		font-size 13px
+		line-height 28px
+		padding-left 20px
+		padding-right 20px
+		&-title
+			font-size 14px
+
+			
+
+	.advantages
+		margin-left -20px
+		margin-right -20px
+		&-img
+			width 250px
+			top -60px
+			right -15px
+			
+	.sect__advantages
+		padding-bottom 100px
+		
+
+	// About
+	.sect__about
+		padding-bottom 50px
+		.sect-title
+			margin-bottom 30px
+			
+	.about
+		margin-top 0
+		&-author
+			font-size 21px
+			line-height 24px
+			width 240px
+		
+		&-img
+			img
+				width 185px
+		
+		&-text
+			font-size 13px
+			line-height 16px
+			margin-top 11px
+			
+	// partners
+	.sect-subtitle
+		margin-top -35px
+		font-size 13px
+		margin-bottom 35px
+	
+	.sect__partners
+		padding-bottom 75px
+	.partners 
+		.slick-track 
+			.slick-slide
+				width auto
+				
+	// Consultation
+	.sect__consultation
+		padding-bottom 105px
+		
+	.consultation
+		&-img
+			width 188px
+			height 188px
+			img
+				width 100%
+				height 100%
+				object-fit cover
+				
+		&-content
+			margin-top -17px
+			.block-text
+				margin-right 0
+				max-width 285px
+				width auto
+				
+	.consultation-entering 
+		.block-text
+			width 60%
+			i
+				display block
+				
+	.block-text
+		font-size 14px
+		line-height 17px
+		
+	.condition
+		margin-top -17px
+		&-img
+			right -30px
+			
+		.block-text
+			font-size 16px
+			width 160px
+			max-width none
+			flex none
+			
+	.sect__condition
+		padding-bottom 65px
+			
+
+	.brief
+	
+		
+		&-link
+			font-size 20px
+			&__notice
+				max-width 130px
+				font-size 13px
+				line-height 16px
+				padding-bottom 15px
+			
+				
+		&-img
+			width 210px
+			height 230px
+			margin-right -60px
+			
+
+	.dialog
+		padding-top 85px
+		&-link
+			font-size 14px
+			line-height 19px
+			i
+				font-size 13px
+				line-height 1
+				
+			a[href^="tel:"]
+				font-size 16px
+				white-space nowrap
+				
+		&-img
+			left auto
+			right 50px
+			width 150px
+			height 220px
+			&:before
+				left auto
+				right -65px
+				bottom -65px
+				width 130px
+				height 130px
+				
+	.sect__dialog
+		.sect-title
+			margin-bottom 16px
+			
+	.phone-row
+		justify-content space-between
+		
+	.copyright
+		max-width 120px
+		&__row
+			margin-top 50px
+			
+	.developer
+		font-size 12px
+
++max-screen(370px)
+	.condition
+		margin-top 0
+		padding-top 0
+		flex-wrap wrap
+		justify-content flex-end
+		.block-text
+			width 100%
+		&-img
+			position relative
+			top auto
+			width 230px
+			height 165px
+			flex none
+			order -1
+			margin-bottom 15px
+			
+
+	.dialog-img
+		right 0

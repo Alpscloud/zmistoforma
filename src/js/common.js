@@ -18,6 +18,23 @@ $(document).ready(function() {
 	});
 
 
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+		$('html').toggleClass('is-fixed');
+		$('.js-nav').toggleClass('is-opened');
+	});
+
+	$(window).on('scroll', function() {
+		if($(this).scrollTop() > 0) {
+			$('.header').addClass('is-fixed');
+		} else {
+			$('.header').removeClass('is-fixed');
+		}
+	});
+
+
 	var partnersSlider = $('.js-partners-slider');
 
 
