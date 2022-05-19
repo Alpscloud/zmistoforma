@@ -174,6 +174,22 @@
 		
 	.copyright__row
 		margin-top 130px
+		
+	// Portfolio
+	.portfolio-link
+		font-size 80px
+		
+
+	.sect__article
+		padding-top 80px
+		
+	.article
+		&-title
+			font-size 70px
+			max-width 100%
+			line-height 1
+		&-header
+			margin-top -30px
 			
 			
 
@@ -195,6 +211,11 @@
 		&-text
 			font-size 14px
 			
+
+	// Portfolio
+	.portfolio-link
+		font-size 60px
+			
 		
 
 +max-screen(1100px)
@@ -207,6 +228,9 @@
 			display none
 			
 
+	.btn-hamburger
+		display inline-block
+		
 	.nav
 		&-logo
 			display block
@@ -363,6 +387,59 @@
 	.dialog-img
 		left 25%
 
+
+	// Portfolio
+	.portfolio-link
+		font-size 45px
+		
+	.portfolio-img
+		display none
+		
+	// Article
+
+	.article
+		&-decor
+			transform none
+			left auto
+			right 20px
+			height 180px
+			top auto
+			bottom 100%
+			margin-bottom 30px
+		&-header
+			flex-wrap wrap
+			flex-direction row-reverse
+			margin-top 30px
+			margin-bottom 30px
+			&__content
+				max-width 100%
+				order 1
+				flex-direction column-reverse
+				
+				.article-link
+					display none
+					
+			&__img
+				width 100%
+				flex none
+				margin-right 0
+				margin-bottom 0
+				padding-top 56.25%
+				margin-top 25px
+				order 2
+				&:after
+					width 100px
+					height 100px
+					right 25px
+					bottom -40px
+				
+		&-link
+			margin-top 0
+			margin-bottom 35px
+			text-align left
+			
+			&__mobile
+				display block
 
 
 +max-screen(700px)
@@ -613,6 +690,35 @@
 		margin-right 0
 		margin-left auto
 		
+
+	.sect__portfolio
+		padding-top 60px
+	.decor-title
+		&:before
+			width 100px
+			height 100px
+			right 0
+			
+	.portfolio-link
+		font-size 24px
+		a
+			padding 16px 0
+			border-width 3px
+			
+
+	.portfolio-slider__btn
+		width 20px
+		height 70px
+		&-wrapper
+			margin-top 30px
+			
+	// Article
+	.article
+		&-title
+			font-size 50px
+		&-decor
+			height 120px
+		
 			
 		
 
@@ -853,6 +959,47 @@
 			
 	.developer
 		font-size 12px
+		
+	.sect__portfolio
+		padding-bottom 45px
+		
+	.header-title__logo
+		font-size 12px
+		
+
+	// ARticle
+	.sect__article
+		padding-top 60px
+		padding-bottom 70px
+	.article
+		&-title
+			font-size 32px
+			line-height 36px
+		&-decor
+			height 100px
+		&-header
+			&__content
+				font-size 18px
+				line-height 24px
+		&-link
+			font-size 13px
+			i
+				font-size 18px
+				
+	.content
+		font-size 13px
+		line-height 19px
+		h2
+			font-size 32px
+			margin-bottom 30px
+			
+		h3
+			font-size 25px
+		
+	body
+		font-size 13px
+		
+		
 
 +max-screen(370px)
 	.condition

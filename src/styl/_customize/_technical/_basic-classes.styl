@@ -25,6 +25,26 @@
 	line-height 1
 	margin-bottom 90px
 	
+.decor-title
+	position relative
+	width fit-content
+	&:before
+		pseudo()
+		width 270px
+		height 270px
+		background url('../img/decor/sun.svg') 50% no-repeat / contain
+		position absolute
+		right -70px
+		vertical-center()
+		z-index -1
+		
+	&-blue
+		&:before
+			background-image url('../img/decor/snowflake.svg')
+			width 176px
+			height 176px
+			right 0
+	
 .sect-subtitle
 	font-size 24px
 	line-height 1
@@ -132,17 +152,24 @@
 			
 	h2,h3,h3,h4,h5,h6
 		line-height 1
-		font-family $Bold
+		font-family $Black
 		
-	strong, b
-		font-family $Bold
+
+		
+	img
+		display block
+		margin 30px auto
+		max-width 100%
+		width auto
+		
 		
 
 	ul, ol
+		margin-bottom 30px
 		li
 			display block
 			position relative
-			margin-bottom 10px
+			margin-bottom 15px
 			
 			&:last-child
 				margin-bottom 0
@@ -151,11 +178,12 @@
 		li
 			&:before
 				pseudo()
-				width 4px
-				height 4px
+				width 5px
+				height 5px
 				border-radius 50%
-				margin-right 4px
-				background-color $text-color
+				margin-right 6px
+				background-color $accent-color
+				vertical-align middle
 				
 	ol
 		counter-reset list
@@ -165,4 +193,24 @@
 				content counter(list) ". "
 				display inline-block
 				margin-right 4px
+				font-family $SemiBold
+				
+	p
+		margin-bottom 40px
+		
+	h2
+		font 40px $Black
+		margin-bottom 40px
+		
+	h3
+		font 32px $Black
+		margin-bottom 40px
+		
+	a
+		color inherit
+		border-bottom 1px solid $accent-color
+		font-family $Italic
+		&:hover
+			border-color transparent
+			color $accent-color
 				

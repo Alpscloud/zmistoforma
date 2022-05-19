@@ -36,6 +36,7 @@ $(document).ready(function() {
 
 
 	var partnersSlider = $('.js-partners-slider');
+	var portfolioSlider = $('.js-portfolio-slider');
 
 
 	if (partnersSlider.length > 0) {
@@ -51,6 +52,19 @@ $(document).ready(function() {
 			slidesToScroll: 1,
 			variableWidth: true,
 			infinite: true
+		});
+	}
+
+	if (portfolioSlider.length > 0) {
+		portfolioSlider.slick({
+			infinite: true,
+			dots: false,
+			vertical: true,
+			verticalSwiping: true,
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			prevArrow: '',
+			nextArrow: $('.js-portfolio-slider-btn')
 		});
 	}
 
@@ -121,6 +135,41 @@ $(document).ready(function() {
 		}
 
 	}
+
+
+	var floatImg = $('.portfolio-img');
+
+	if (floatImg.length > 0) {
+
+		var width = floatImg.outerWidth() / 2;
+		var height  = floatImg.outerHeight() / 2;
+
+		$('.portfolio-wrapper').on('mousemove', function(e) {
+			floatImg.css({
+				'left': e.pageX - width + 'px',
+				'top': e.pageY - height + 'px'
+			});
+		});
+
+		$('.portfolio-slide').on('mouseenter', function() {
+			floatImg.find('span').css('background-image', 'url('+$(this).attr('data-img-src')+')');
+		});
+
+		$('.portfolio-slider').on('mouseenter', function() {
+			floatImg.addClass('is-active');
+		});
+
+		$('.portfolio-slider').on('mouseleave', function() {
+			floatImg.removeClass('is-active');
+		});
+
+		
+
+		
+
+
+	}
+
 
 
 	AOS.init({

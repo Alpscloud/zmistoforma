@@ -1,0 +1,143 @@
+.sect__portfolio
+	padding-top 150px
+	padding-bottom 140px
+	&-inner
+		padding-top 0 !important
+ 	
+
+.portfolio
+	&-wrapper
+		position relative
+
+	&-img
+		width 430px
+		height 470px
+		position absolute
+		z-index -1
+		pointer-events none
+		span
+			bg(50%, 50%)
+			display block
+			width 100%
+			height 100%
+			transform scale(0, 0)
+			opacity 0
+			visibility hidden
+	
+			background-color #e3e3e3
+			transition all .25s ease-in-out
+			
+		&.is-active
+			span
+				transform scale(1,1)
+				opacity 1
+				visibility visible
+		
+	&-link
+		font 110px $SemiBold
+		a
+			display block
+			text-align center
+			padding 30px 0
+			border-bottom 5px solid $basic-black-color
+			
+			&:hover
+				color $accent-color
+				
+	&-slider
+		&__btn
+			display inline-block
+			width 30px
+			height 102px
+			&-wrapper
+				margin-top 90px
+			svg
+				svg()
+				fill black
+			&:hover
+				svg
+					fill $accent-color
+					
+// Article
+.sect__article
+	padding 150px 0
+	
+.article
+	&-title
+		text-transform uppercase
+		font 96px $SemiBold
+		line-height 100px
+		position relative
+		z-index 1
+		max-width calc(100% - 660px)
+		
+	&-decor
+		height 250px
+		position absolute
+		z-index -1
+		top -165px
+		horisontal-center()
+		img
+			display block
+			width auto
+			height 100%
+		
+	&-header
+		margin-bottom 80px
+		display flex
+		flex-wrap nowrap
+		margin-top -45px
+		&__img
+			flex 1
+			margin-right 20px
+			padding-top 36.4%
+			position relative
+			overflow visible
+			&:after
+				pseudo()
+				position absolute
+				bottom -50px
+				right -110px
+				width 180px
+				height 180px
+				background url('../img/decor/yellow-snowflake.svg') 50% no-repeat / contain
+		&__content
+			width 100%
+			max-width 640px
+			flex 1
+			display flex
+			flex-direction column
+			justify-content space-between
+			position relative
+			font-size 24px
+			
+	&-link
+		font 18px $Bold
+		white-space nowrap
+		margin-top 20px
+		&__mobile
+			display none
+		a
+			position relative
+			display inline-block
+			&:before
+				pseudo()
+				position absolute
+				left 0
+				bottom 2px
+				height 3px
+				background-color $accent-color
+				transition width .17s ease-in-out
+				width 0
+			i
+				text-transform none
+				font-size 22px
+			&:hover
+				&:before
+					width 100%
+					
+	&-content
+		max-width 1100px
+		margin 0 auto
+
+ 	
