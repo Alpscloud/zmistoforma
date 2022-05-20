@@ -5,32 +5,47 @@
 	<div class="content__wrapper">
 
 
-		{% include '../parts/components/float-img.html' %}
 
 
 		<!-- Header -->
-		{% include '../parts/sections/header.html' %}
+		{% include '../parts/sections/header-inner.html' %}
 		<!-- //Header -->
 
 		<!-- Main -->
 		<main class="main">
 
-			<section class="sect__portfolio">
+			<section class="sect__technical">
 				<div class="container">
-					<h1 class="sect-title decor-title">слово<i>праця</i></h1>
+					<div class="block-404">
+						<div class="block-404__img">
+							<img src="img/404.jpg" alt="">
+						</div>
 
-					
-					{% include '../parts/components/portfolio-slider.html' %}
+						<h1 class="block-404__title">404</h1>
+						<h2 class="block-404__subtitle">в мене просто<br> немає слів <span><i>від дизайну</i> нашого сайту</span></h2>
+
+						<div class="row align-vertical-center align-horisontal-between row-gutters row-nowrap block-404__row">
+							<p class="col-gutters">та на цій сторінці взагалі нема нічого спробуйте почати з головної</p>
+
+							<div class="homepage-link__wrapper col-gutters row align-vertical-center row-nowrap">
+								<svg  viewBox="0 0 169 24"  xmlns="http://www.w3.org/2000/svg">
+									<path d="M168.061 13.0607C168.646 12.4749 168.646 11.5251 168.061 10.9394L158.515 1.39341C157.929 0.807625 156.979 0.807625 156.393 1.39341C155.808 1.9792 155.808 2.92895 156.393 3.51473L164.879 12L156.393 20.4853C155.808 21.0711 155.808 22.0208 156.393 22.6066C156.979 23.1924 157.929 23.1924 158.515 22.6066L168.061 13.0607ZM-1.31134e-07 13.5L167 13.5L167 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z"/>
+								</svg>
+
+
+								<a href="index.html" class="homepage-link">на головну</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!-- //container -->
 			</section>
-			
 
 		</main>
 		<!-- //Main -->
 
 		<!-- Footer -->
-		{% include '../parts/sections/footer.html' %}
+		{% include '../parts/sections/footer-inner.html' %}
 		<!-- //Footer -->
 
 

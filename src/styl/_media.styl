@@ -20,6 +20,10 @@
 	.sect-title
 		font-size 32px
 		margin-bottom 70px
+		
+	.sect__technical
+		margin-top -79px
+		padding-top 100px
 	
 	// Header
 	.nav
@@ -191,7 +195,10 @@
 		&-header
 			margin-top -30px
 			
-			
+	
+	.block-404
+		&:before
+			top -25px
 
 				
 
@@ -247,7 +254,7 @@
 			flex none
 			margin 0
 			width 100%
-			padding 100px 20px
+			padding 50px 20px 100px
 			
 			transition all .35s ease-in-out
 			opacity 0
@@ -258,9 +265,15 @@
 				visibility visible
 				pointer-events auto
 			
-			.promo-round
+			.promo-round,
+			.langs
 				display block
-				margin 100px auto 0
+				
+			.langs
+				margin-left 0
+				a
+					font-size 20px
+			
 				
 		ul
 			display block
@@ -440,7 +453,67 @@
 			
 			&__mobile
 				display block
+				
 
+	.header-inner
+		.nav-wrapper
+			display block
+			
+		.logo
+			flex-direction column
+			align-items flex-start
+			
+			.header-title__logo
+				margin-left 0
+				margin-top 5px
+
+
+	.footer-inner
+		position relative
+		
+		.copyright__row
+			margin-left 0
+			margin-right 0
+			
+		.developer,
+		.copyright
+			padding-left 0
+			padding-right 0
+		
+		.nav
+			display none
+			
+
+	.block-404
+		padding-right 50px
+		padding-left 120px
+		&:before
+			width 140px
+			height 140px
+			left 0
+		&__img
+			right -70px
+			width 350px
+			height 190px
+			
+		&__row
+			flex-wrap wrap
+			
+			p
+				max-width 100%
+				margin-right 0
+				margin-bottom 30px
+				
+		&__title
+			font-size 120px
+			
+		&__subtitle
+			font-size 36px
+			
+		
+	.sect__technical
+		min-height auto
+		margin-top 0
 
 +max-screen(700px)
 	.container
@@ -720,7 +793,13 @@
 			height 120px
 		
 			
-		
+	.block-404
+		padding-left 0
+		padding-right 0
+		&:before
+			top -70px
+			left -40px
+			
 
 +max-screen(470px)
 	.sect-title
@@ -999,7 +1078,52 @@
 	body
 		font-size 13px
 		
+	.sect__technical
+		min-height auto
+		margin-top 0
+		padding-top 60px
+		padding-bottom 40px
 		
+	
+	.block-404
+		padding-top 220px
+		&:before
+			width 110px
+			height 110px
+			top 100px
+			z-index 1
+			left auto
+			right 220px
+		&__title
+			font-size 130px
+		&__img
+			width 290px
+			height 290px
+			right -15px
+			top 0
+			
+		&__subtitle
+			font-size 24px
+			span
+				font-size 20px
+				i
+					font-family $Italic
+					text-transform none
+					
+		p
+			font-size 12px
+			max-width 300px
+			
+	.homepage-link
+		font-size 16px
+		
+		&__wrapper
+			justify-content space-between
+			svg
+				width 126px
+				flex none
+				margin-right 20px
+			
 
 +max-screen(370px)
 	.condition
@@ -1021,3 +1145,6 @@
 
 	.dialog-img
 		right 0
+		
+	.block-404__title
+		font-size 115px
